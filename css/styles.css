@@ -16,30 +16,29 @@ body {
 header {
     background-color: #ff7eb9; /* Pink */
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 {
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+h1 {
     margin: 0;
     font-family: 'Pacifico', cursive;
     font-size: 36px;
     color: #fff;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
 }
 
 /* Main content styles */
@@ -47,58 +46,15 @@ main {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 40px;
+.landing {
+    text-align: center;
+    margin-top: 50px;
 }
 
 h2 {
-    color: #ff7eb9; /* Pink */
-    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
     font-weight: bold;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
-    position: relative; /* Set position to relative */
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.1);
-}
-
-/* Overlay styles */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    transition: opacity 0.3s ease;
-}
-
-.image-container:hover .overlay {
-    opacity: 1;
-}
-
-.overlay:hover {
-    cursor: pointer;
+    margin-bottom: 20px;
 }
 
 /* Footer styles */
@@ -112,24 +68,4 @@ footer {
 
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
-/* Define Pacifico font */
-.pacifico-regular {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-/* Fallback fonts */
-body, h1, h2, nav ul li a {
-    font-family: 'Roboto', sans-serif;
-}
-
-header h1 {
-    font-family: 'Pacifico', cursive;
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-}

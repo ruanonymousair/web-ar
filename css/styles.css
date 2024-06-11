@@ -115,6 +115,12 @@ footer {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+/* Define Pacifico font */
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 /* Fallback fonts */
 body, h1, h2, nav ul li a {
     font-family: 'Roboto', sans-serif;
